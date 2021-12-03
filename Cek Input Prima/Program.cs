@@ -13,20 +13,12 @@ namespace Cek_Input_Prima
                 int Input = Convert.ToInt32(Console.ReadLine());
                 int counter = 0;
                 for (int i = 1; i <= Input; i++)
-                {
                     if (Input % i == 0)
-                    {
                         counter++;
-                    }
-                }
                 if (counter == 2)
-                {
                     Console.WriteLine("Bilangan Prima");
-                }
                 else
-                {
                     Console.WriteLine("bukan Bilangan Prima");
-                }
                 Console.WriteLine();
                 Console.WriteLine("Press any key to repeat");
                 Console.ReadKey();
