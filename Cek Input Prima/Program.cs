@@ -6,24 +6,31 @@ namespace Cek_Input_Prima
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Cek Input apakah Bilangan Prima atau Bukan");
-            Console.Write("Input : ");
-            int Input = Convert.ToInt32(Console.ReadLine());
-            int counter = 0;
-            for(int i = 1; i <= Input; i++)
+            while (true)
             {
-                if (Input % i == 0)
+                Console.WriteLine("Cek Input apakah Bilangan Prima atau Bukan");
+                Console.Write("Input : ");
+                int Input = Convert.ToInt32(Console.ReadLine());
+                int counter = 0;
+                for (int i = 1; i <= Input; i++)
                 {
-                    counter++;
+                    if (Input % i == 0)
+                    {
+                        counter++;
+                    }
                 }
-            }
-            if (counter == 2)
-            {
-                Console.WriteLine("Bilangan Prima");
-            }
-            else
-            {
-                Console.WriteLine("bukan Bilangan Prima");
+                if (counter == 2)
+                {
+                    Console.WriteLine("Bilangan Prima");
+                }
+                else
+                {
+                    Console.WriteLine("bukan Bilangan Prima");
+                }
+                Console.WriteLine();
+                Console.WriteLine("Press any key to repeat");
+                Console.ReadKey();
+                Console.Clear();
             }
         }
     }
