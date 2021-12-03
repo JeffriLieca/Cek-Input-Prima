@@ -7,7 +7,7 @@ namespace Cek_Input_Prima
         static void Main(string[] args)
         {
             Console.WriteLine("Cek Input apakah Bilangan Prima atau Bukan");
-            Console.Write("Input :");
+            Console.Write("Input : ");
             int Input = Convert.ToInt32(Console.ReadLine());
             int counter = 0;
             for(int i = 1; i <= Input; i++)
@@ -16,6 +16,14 @@ namespace Cek_Input_Prima
                 {
                     counter++;
                 }
+            }
+            if (counter == 2)
+            {
+                Console.WriteLine("Bilangan Prima");
+            }
+            else
+            {
+                Console.WriteLine("bukan Bilangan Prima");
             }
         }
     }
